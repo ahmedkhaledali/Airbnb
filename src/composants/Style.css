@@ -1,7 +1,50 @@
-.bg-nav{
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 
+::selection{
+    background-color:red ;
+}
+
+.bg-nav{
+background-image: url(./images/covvv.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 600px;
+    min-height: 500px;
+}
+.card1{
+    margin-top: 5%;
+    
+}
+.card2{
+    width: 15rem;
+  border-radius: 25px;
+}
+.card-img{
+    width: 15rem;
+    border-radius: 5%;
+}
+.card-txt{
+font-size: 15px;
+    
+}
+.cov{
+    background-image: url(./images/cov1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    border-radius: 5%;
+}
+.text{
+    color: white;
+padding: 5%;
+display: flex;
+flex-wrap: wrap;
+font-size: 20px;
+}
+
+.footer{
+    background-color: whitesmoke;
 }

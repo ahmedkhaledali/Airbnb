@@ -104,43 +104,49 @@ const assistant=[
 ]
 function Footer(props){
     return(
-        <div>
-           <Container>
+        <div className="footer"> 
+            
+           <Container className="card1">
                <Row>
                    <Col md={3}>
+                       <h4>A PROPOS</h4>
                {props.ft.map(el=>
-<ul> 
-<li>{el.titre}</li>
-</ul>
+<p>
+{el.titre}
+</p>
 )}     
 </Col>  
 
 <Col md={3}>
+<h4>COMMUNAUTÉ</h4>
                     {props.ft1.map(el =>
-    <ul>
-<li>{el.titre}</li>
-</ul>
+    <p>
+{el.titre}
+</p>
 )}
 </Col>
 
 <Col md={3}>
+<h4>HÔTE</h4>
                     {props.ft2.map(el =>
-    <ul>
-<li>{el.titre}</li>
-</ul>
+    <p>
+{el.titre}
+</p>
 )}          
 </Col>
 <Col md={3}>         
+<h4>ASSISTANCE</h4>
                     {props.ft3.map(el =>
-    <ul>
-<li>{el.titre}</li>
-</ul>
+    <p>
+{el.titre}
+</p>
 )}
    </Col>
                </Row>
            </Container>
-                    
-                       
+            <hr></hr>        
+                       <p>© 2021 Airbnb, Inc.·Confidentialité·Conditions générales·Plan du site·Fonctionnement du site·Infos sur l'entreprise
+</p>
 
                  
                   

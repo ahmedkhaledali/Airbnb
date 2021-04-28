@@ -6,29 +6,30 @@ import Card from 'react-bootstrap/Card';
 
 const obj1=[
   {titre:"Escapades en pleine nature",
-img:'./images/img1.jpg'},
+img:'https://a0.muscache.com/im/pictures/2f13349d-879d-43c6-83e3-8e5679291d53.jpg?im_w=320'},
   {titre:"Des logements uniques",
-  img:'./images/img2.jpg'},
+  img:'https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=320'},
   {titre:"Logements entiers",
-  img:'./images/img3.jpg'},
+  img:'https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=320'},
   {titre:"Animaux de compagnie acceptés",
-  img:'./images/img4.jpg'},
+  img:'https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=320'},
 ]
 
 function Card2(props) {
   return (
-    <div>
-        <h1>Chez vous, partout</h1>
-<Container>
+  
+        
+<Container  className="card1">
+<h2>Chez vous, partout</h2>
+
 <Row className="d-flex justify-content-between">
     {props.tt1.map(el=>
 
-<Card style={{ width: '10rem' }}>
-<Card.Img variant="top" src={el.img} />
+<Card style={{border:'none' }}>
+<Card.Img variant="top" src={el.img} className="card-img"/>
 <Card.Body>
-  <Card.Title></Card.Title>
+  <Card.Title className=" card-txt">{el.titre}</Card.Title>
   <Card.Text>
-  {el.titre} 
      </Card.Text>
 </Card.Body>
 </Card>
@@ -38,7 +39,7 @@ function Card2(props) {
 </Row>
 </Container>
 
-    </div>
+    
   )}
 
   function Recherche1(){

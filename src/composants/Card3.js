@@ -5,38 +5,39 @@ import Card from 'react-bootstrap/Card';
 
 
 const obj2=[{
-    titre:"Escapades en pleine nature",
-    img:'./images/img1.jpg'},
+    titre:"Collection à la une : Envies d'évasion",
+    titre1:"Voyagez depuis chez vous grâce aux expériences en ligne.",
+    img:'https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=320'},
 
-      {titre:"Des logements uniques",
-      img:'./images/img2.jpg'},
+      {titre:"Expériences en ligne",
+      titre1:"Activités interactives en direct, animées par des hôtes.",
+      img:'https://a0.muscache.com/im/pictures/a6b08861-feb8-4a01-a76d-b33d2867b441.jpg?im_w=320'},
 
-      {titre:"Logements entiers",
-      img:'./images/img3.jpg'},
+      {titre:"Expériences",
+      titre1:"Prenez part à des activités locales, où que vous soyez.",
+      img:'https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=320'},
 
-      {titre:"Animaux de compagnie acceptés",
-      img:'./images/img4.jpg'},
+     
     ]
 
 function Card3(props){
     return(
-        <div>
-            <h1>Découvrez les expériences</h1>
-            <h2>Des activités uniques avec des experts locaux, en personne ou en ligne.</h2>
+        <div className="card1">
             
-
-    
-<Container>
+            
+<Container >
+<h1>Découvrez les expériences</h1>
+            <h2>Des activités uniques avec des experts locaux, en personne ou en ligne.</h2>
 <Row className="d-flex justify-content-between">
 
 {props.tt2.map(el=>
 
-<Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={el.img} />
+<Card style={{ width: '18rem',border:'none' }}>
+    <Card.Img className="card-img" variant="top" src={el.img} />
     <Card.Body>
-      <Card.Title></Card.Title>
+      <Card.Title> {el.titre}</Card.Title>
       <Card.Text>
-      {el.titre}
+     {el.titre1}
       </Card.Text>
     </Card.Body>
   </Card>
